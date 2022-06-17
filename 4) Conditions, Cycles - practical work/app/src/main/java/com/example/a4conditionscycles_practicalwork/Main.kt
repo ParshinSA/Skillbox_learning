@@ -11,6 +11,15 @@ fun main() {
     } else {
         println(calculateNumberFibonacci(n))
     }
+
+
+    val a = mutableListOf(1, 2, 3, 4)
+    val aIterator = a.iterator()
+
+    while (aIterator.hasNext()) {
+        val item = aIterator.next()
+        if (item < 0) aIterator.remove()
+    }
 }
 
 fun calculateNumberFibonacci(
